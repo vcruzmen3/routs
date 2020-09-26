@@ -1,0 +1,38 @@
+<h1>Componente de Soundtrack</h1>
+<br>
+<div >
+<form #formSound="ngForm" (ngSubmit)="onSubmit(); formSound.reset();">
+    
+    <p>
+            <label>Titulo:</label>
+        <input type="text" name="title" #title="ngModel" [(ngModel)]="soundtrack.title" 
+            required pattern="[a-zA-Z#]+">
+        <span *ngIf="title.touched && !title.valid">Escriba el titulo por favor</span>
+    </p>    
+        <p>
+        <label>Interprete:</label>
+        <input type="text" name="interprete" #interprete="ngModel" 
+        [(ngModel)]="soundtrack.interprete"
+        required pattern="[a-zA-Z#]+">
+        <span *ngIf="interprete.touched && !interprete.valid">Escriba el interprete por favor</span> 
+    </p>
+        <p>
+
+            <label>Año:</label>
+         <input type="text" name="year" #year="ngModel" [(ngModel)]="soundtrack.year"
+            required pattern="[0-9]+">
+            <span *ngIf="year.touched && !year.valid">Escriba el año por favor</span>
+        </p> 
+        
+            <input type="submit" value="Guardar" [disabled]="!formSound.form.valid">
+
+</form>
+</div>
+<div class="listado">
+    <h4>Listado de Soundtracks</h4>
+    <ul>
+        <li *ngFor="let sounds of soundtracks">
+            {{sounds.title}} - {{sounds.interprete}} - {{sounds.year}}
+        </li>
+    </ul>
+</div>

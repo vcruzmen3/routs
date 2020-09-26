@@ -1,0 +1,33 @@
+<div *ngIf="!parametroViejo else Carga"> 
+    <div>
+        <button (click)="redirecciona()"  type="button" class="btn btn-success">Ir a seleccionar</button>                        
+    </div>
+</div>
+
+<ng-template #Carga>
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">                   
+                <div *ngFor="let pelicula of seleccionado">   
+                    <div class="" style="height: 400px;">                
+                        <div class="align-self-center text-center titulo;">
+                            <h1>{{pelicula.title}} &nbsp; {{pelicula.year}}</h1>
+                        </div>                                
+                        <div class="align-self-center imagenx" >    
+                            <img src="{{pelicula.image}} " style="max-width: 100%; 
+                            max-height: 10%;"/>                
+                        </div>                   
+                    </div>
+                                            
+                </div>                
+            </div>            
+        </div>
+    </div>
+</ng-template>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+

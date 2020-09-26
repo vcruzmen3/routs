@@ -1,0 +1,50 @@
+div{
+    float:left;
+}
+
+.listado{
+    margin-left: 30px;
+}
+form{
+    width: 200px;
+}
+
+input[type="text"]{
+    display:block;
+    width:100%;
+
+}
+ span{
+    display:block;
+    width:100%;
+    color: orange;
+}
+
+label{
+    color: springgreen;
+}
+  /**
+  Echo a mano y copiado de otro
+  .ctitulo{
+    height: 20px;
+    width: 80px;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    font-weight: bold;
+    
+}
+.inputbx{
+    height: 20px;
+    width: 80px;
+}
+
+div {
+    margin: .4em 0;
+  }
+  div label {
+    width: 25%;
+    float: left;
+  }
+
+
+  */

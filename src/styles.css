@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+	margin: 30px;
+	padding: 30px;
+	background: url(fondoTec.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+	 background-attachment: fixed;
+}
+
+.activado{
+font-weight: bold;
+color: blue;
+}

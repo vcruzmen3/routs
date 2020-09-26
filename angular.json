@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "routs"
+    }
+  },
+  "defaultProject": "routs",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,0 +1,19 @@
+<h1>Bienvenidos a Mi Cine</h1>
+
+<h2>Tu pagina con las mejores Peliculas</h2>
+
+
+<h2>{{titulo}}</h2>
+<br>
+<input type="text" [(ngModel)]="pelicula_a_guardar">
+<button (click)="guardarPelicula()" class="btn btn-success"> Agregar Pelicula </button>
+<p *ngIf="pelicula_a_guardar" class="spanv"> La pelicula a guardar es:<strong> {{pelicula_a_guardar}}</strong></p>
+<br>
+<br>
+<h3>Listado de peliculas</h3>
+<ul>
+    <li *ngFor="let pelicula of listado_peliculas; let i = index">
+        <h3>{{pelicula}}</h3><button (click)="eliminarPelicula(i)" class="btn btn-success">Eliminar Pelicula </button>
+    </li>
+   
+</ul>
